@@ -19,7 +19,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 bat 'if not exist deploy mkdir deploy'
-                bat 'copy /Y index.html deploy/index.html'
+                bat 'copy /Y index.html deploy\\index.html'
                 echo 'DEPLOYMENT SUCCESSFUL'
             }
         }
